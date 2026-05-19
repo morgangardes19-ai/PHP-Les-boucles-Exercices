@@ -1,6 +1,7 @@
 <?php
-$number = 0;
+$number = 1;
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,9 +13,13 @@ $number = 0;
 </head>
 
 <body>
-    <?php for ($number = 0; $number <= 10; $number++) { ?>
-        <p><?= $number ?></p>
-    <?php } ?>
+    <?php
+    while ($number <= 10) { ?>
+        <p> <?= $number ?></p>
+    <?php
+        $number += $number / 2;
+    }
+    ?>
 </body>
 
 </html>
