@@ -1,6 +1,6 @@
 <?php
-$number = 1;
-$message = "On tient le bon bout.";
+$number = 200;
+$message = "Enfin !!!!";
 ?>
 
 
@@ -14,11 +14,11 @@ $message = "On tient le bon bout.";
 </head>
 
 <body>
-    <?php for ($number = 1; $number <= 100; $number += 15) {
-        if ($number < 91) { ?>
-            <p><?= $number; ?></p>
+    <?php for ($number = 200; $number > -5; $number -= 12) {
+        if ($number > -4) { ?>
+            <?= $number ?>
         <?php } else { ?>
-            <?= $message; ?>
+            <?= $message ?>
     <?php }
     } ?>
 </body>
