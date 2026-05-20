@@ -14,13 +14,19 @@ $message = "Enfin !!!!";
 </head>
 
 <body>
-    <?php for ($number = 200; $number > -5; $number -= 12) {
-        if ($number > -4) { ?>
-            <?= $number ?>
-        <?php } else { ?>
-            <?= $message ?>
-    <?php }
-    } ?>
+    <h1>debut de la boucle</h1>
+    <ul>
+
+
+        <?php for ($number = 200; $number > -5; $number -= 12) {
+            if ($number > -4) { ?>
+                <li> <?= $number ?> </li>
+            <?php } else { ?>
+                <li><?= $message ?></li>
+        <?php }
+        } ?>
+
+    </ul>
 </body>
 
 </html>
